@@ -1,5 +1,5 @@
 
-COURIER TRACKING
+**COURIER TRACKING**
 
 Courier Tracking is a restful web application with Java, that mainly
 takes streaming geolocations of couriers (time, courier, lat, lng) as input.
@@ -11,19 +11,36 @@ takes streaming geolocations of couriers (time, courier, lat, lng) as input.
   courier travels.
 
 
-TECHOLOGY STACK 
+**TECHOLOGY STACK** 
 
-• Java 8
-• Spring Boot
-• Swagger
-• Apache Maven
-• Spring Data JPA
-• ModelMapper
-• PostgreSQL
-• IntelliJ IDEA
+- Java 8
+- Spring Boot
+- Swagger
+- Apache Maven
+- Spring Data JPA
+- ModelMapper
+- PostgreSQL
+- IntelliJ IDEA
 
 
-PROJECT STRUCTURE
+**PROJECT STRUCTURE**
 
-Layered Architecture
 ![img.png](img.png)
+
+
+**APPLICATION COMPONENTS**
+
+Controllers :
+- _CouriersController_ : adds new courier, gets list of specific stores (which courier's distance in meters is smaller than 100 meters and courier's distance in minutes is bigger than 1 minute), gets total travel distance of the courier given by id.
+- _GeolocationsController_ : adds new geolocation of courier.
+- _StoresController_ : adds new store.
+
+**PROJECT SETUP**
+
+- git clone https://github.com/zeynepkesim/CourierTracking
+- run CourierTrackingApplication class
+
+
+**API DOCUMENTATION**
+
+- http://localhost:8080/swagger-ui.html#/
